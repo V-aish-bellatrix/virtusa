@@ -1,0 +1,12 @@
+[
+    {
+      "_id": {"$oid": "c0d21b4667d0d8992e611285"},
+      "userId": "60d21b4667d0d8992e610c85",
+      "endpoint": "https://fcm.googleapis.com/fcm/send/example123",
+      "keys": {
+        "p256dh": "BIPUL12...",
+        "auth": "AF6I3p..."
+      },
+      "createdAt": {"$date": "2023-06-15T10:35:00Z"}
+    }
+  ]

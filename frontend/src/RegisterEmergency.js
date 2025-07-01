@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { createEmergency } from './services/emergencyService';
 import { authService } from './services/authService';
 
+
 const incidentTypes = [
   'Accident',
   'Medical Emergency',
@@ -13,9 +14,15 @@ const incidentTypes = [
 ];
 
 function RegisterEmergency() {
+  // Set default date and time to current values (LOCAL)
+  const now = new Date();
+  const pad = n => n.toString().padStart(2, '0');
+  const defaultDate = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+  const defaultTime = now.toTimeString().slice(0, 5);
+
   const [formData, setFormData] = useState({
-    date: '',
-    time: '',
+    date: defaultDate,
+    time: defaultTime,
     location: '',
     useGPS: false,
     incidentType: '',
@@ -103,7 +110,7 @@ function RegisterEmergency() {
       type: formData.incidentType || 'Accident',
       location: formData.location,
       description: `Emergency reported on ${formData.date} at ${formData.time}`,
-      status: 'pending'
+      status: 'pending',
     };
 
     console.log('Submitting emergency data:', emergencyData);
@@ -137,6 +144,16 @@ function RegisterEmergency() {
     } else {
       navigate('/');
     }
+  };
+
+  const setCurrentDateTime = () => {
+    const now = new Date();
+    // Format date as YYYY-MM-DD for input type="date"
+    const date = now.toISOString().slice(0, 10);
+    // Format time as HH:MM (24-hour) for input type="time"
+    const time = now.toTimeString().slice(0, 5);
+
+    setFormData(prev => ({ ...prev, date, time }));
   };
 
   if (showSuccess) {
@@ -215,12 +232,7 @@ function RegisterEmergency() {
                 <button
                   type="button"
                   className="bg-gradient-to-r from-[#00d4ff] to-[#4ecdc4] font-bold nav-item text-white cursor-pointer px-4 py-2 rounded-full transition-all relative overflow-hidden shadow-lg hover:from-[#0f3460] hover:to-[#533483] focus:outline-none"
-                  onClick={() => {
-                    const now = new Date();
-                    const date = now.toISOString().slice(0, 10);
-                    const time = now.toTimeString().slice(0, 5);
-                    setFormData(prev => ({ ...prev, date, time }));
-                  }}
+                  onClick={setCurrentDateTime}
                 >
                   Set Current Date and Time
                 </button>

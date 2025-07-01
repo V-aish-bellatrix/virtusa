@@ -7,8 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import SosService from './services/sosService';
 import AIChatbot from './AIChatbot';
 import { authService } from './services/authService';
-import ViolationList from './ViolationList';
-import EmergencyList from './EmergencyList';
 import { getEmergencies } from './services/emergencyService';
 
 function TrafficCopDashboard() {

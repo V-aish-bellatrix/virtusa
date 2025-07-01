@@ -1,0 +1,434 @@
+[
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c85"},
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "passwordHash": "$2a$10$examplehash1",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-15T10:30:00Z"},
+    "updatedAt": {"$date": "2023-01-15T10:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c86"},
+    "username": "officer_smith",
+    "email": "officer.smith@traffic.gov",
+    "passwordHash": "$2a$10$examplehash2",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-16T11:30:00Z"},
+    "updatedAt": {"$date": "2023-01-16T11:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c87"},
+    "username": "admin_user",
+    "email": "admin@traffic.gov",
+    "passwordHash": "$2a$10$examplehash3",
+    "role": "admin",
+    "createdAt": {"$date": "2023-01-17T09:15:00Z"},
+    "updatedAt": {"$date": "2023-01-17T09:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c88"},
+    "username": "alice_johnson",
+    "email": "alice.j@example.com",
+    "passwordHash": "$2a$10$examplehash4",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-18T14:20:00Z"},
+    "updatedAt": {"$date": "2023-01-18T14:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c89"},
+    "username": "officer_wilson",
+    "email": "wilson@traffic.gov",
+    "passwordHash": "$2a$10$examplehash5",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-19T08:45:00Z"},
+    "updatedAt": {"$date": "2023-01-19T08:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c8a"},
+    "username": "robert_miller",
+    "email": "robert.m@example.com",
+    "passwordHash": "$2a$10$examplehash6",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-20T16:30:00Z"},
+    "updatedAt": {"$date": "2023-01-20T16:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c8b"},
+    "username": "officer_lee",
+    "email": "lee@traffic.gov",
+    "passwordHash": "$2a$10$examplehash7",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-21T10:15:00Z"},
+    "updatedAt": {"$date": "2023-01-21T10:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c8c"},
+    "username": "sarah_williams",
+    "email": "sarah.w@example.com",
+    "passwordHash": "$2a$10$examplehash8",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-22T09:30:00Z"},
+    "updatedAt": {"$date": "2023-01-22T09:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c8d"},
+    "username": "officer_brown",
+    "email": "brown@traffic.gov",
+    "passwordHash": "$2a$10$examplehash9",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-23T14:20:00Z"},
+    "updatedAt": {"$date": "2023-01-23T14:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c8e"},
+    "username": "michael_davis",
+    "email": "michael.d@example.com",
+    "passwordHash": "$2a$10$examplehash10",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-24T11:45:00Z"},
+    "updatedAt": {"$date": "2023-01-24T11:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c8f"},
+    "username": "officer_taylor",
+    "email": "taylor@traffic.gov",
+    "passwordHash": "$2a$10$examplehash11",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-25T13:10:00Z"},
+    "updatedAt": {"$date": "2023-01-25T13:10:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c90"},
+    "username": "jennifer_martin",
+    "email": "jennifer.m@example.com",
+    "passwordHash": "$2a$10$examplehash12",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-26T15:30:00Z"},
+    "updatedAt": {"$date": "2023-01-26T15:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c91"},
+    "username": "officer_anderson",
+    "email": "anderson@traffic.gov",
+    "passwordHash": "$2a$10$examplehash13",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-27T10:20:00Z"},
+    "updatedAt": {"$date": "2023-01-27T10:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c92"},
+    "username": "david_wilson",
+    "email": "david.w@example.com",
+    "passwordHash": "$2a$10$examplehash14",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-28T14:45:00Z"},
+    "updatedAt": {"$date": "2023-01-28T14:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c93"},
+    "username": "officer_moore",
+    "email": "moore@traffic.gov",
+    "passwordHash": "$2a$10$examplehash15",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-29T09:15:00Z"},
+    "updatedAt": {"$date": "2023-01-29T09:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c94"},
+    "username": "emily_thompson",
+    "email": "emily.t@example.com",
+    "passwordHash": "$2a$10$examplehash16",
+    "role": "user",
+    "createdAt": {"$date": "2023-01-30T11:30:00Z"},
+    "updatedAt": {"$date": "2023-01-30T11:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c95"},
+    "username": "officer_harris",
+    "email": "harris@traffic.gov",
+    "passwordHash": "$2a$10$examplehash17",
+    "role": "cop",
+    "createdAt": {"$date": "2023-01-31T13:45:00Z"},
+    "updatedAt": {"$date": "2023-01-31T13:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c96"},
+    "username": "daniel_white",
+    "email": "daniel.w@example.com",
+    "passwordHash": "$2a$10$examplehash18",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-01T15:20:00Z"},
+    "updatedAt": {"$date": "2023-02-01T15:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c97"},
+    "username": "officer_martinez",
+    "email": "martinez@traffic.gov",
+    "passwordHash": "$2a$10$examplehash19",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-02T10:30:00Z"},
+    "updatedAt": {"$date": "2023-02-02T10:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c98"},
+    "username": "sophia_robinson",
+    "email": "sophia.r@example.com",
+    "passwordHash": "$2a$10$examplehash20",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-03T14:15:00Z"},
+    "updatedAt": {"$date": "2023-02-03T14:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c99"},
+    "username": "officer_clark",
+    "email": "clark@traffic.gov",
+    "passwordHash": "$2a$10$examplehash21",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-04T11:45:00Z"},
+    "updatedAt": {"$date": "2023-02-04T11:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c9a"},
+    "username": "james_rodriguez",
+    "email": "james.r@example.com",
+    "passwordHash": "$2a$10$examplehash22",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-05T09:30:00Z"},
+    "updatedAt": {"$date": "2023-02-05T09:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c9b"},
+    "username": "officer_lewis",
+    "email": "lewis@traffic.gov",
+    "passwordHash": "$2a$10$examplehash23",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-06T13:20:00Z"},
+    "updatedAt": {"$date": "2023-02-06T13:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c9c"},
+    "username": "olivia_walker",
+    "email": "olivia.w@example.com",
+    "passwordHash": "$2a$10$examplehash24",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-07T15:45:00Z"},
+    "updatedAt": {"$date": "2023-02-07T15:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c9d"},
+    "username": "officer_young",
+    "email": "young@traffic.gov",
+    "passwordHash": "$2a$10$examplehash25",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-08T10:15:00Z"},
+    "updatedAt": {"$date": "2023-02-08T10:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c9e"},
+    "username": "william_allen",
+    "email": "william.a@example.com",
+    "passwordHash": "$2a$10$examplehash26",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-09T14:30:00Z"},
+    "updatedAt": {"$date": "2023-02-09T14:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610c9f"},
+    "username": "officer_king",
+    "email": "king@traffic.gov",
+    "passwordHash": "$2a$10$examplehash27",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-10T11:20:00Z"},
+    "updatedAt": {"$date": "2023-02-10T11:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca0"},
+    "username": "ava_wright",
+    "email": "ava.w@example.com",
+    "passwordHash": "$2a$10$examplehash28",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-11T13:45:00Z"},
+    "updatedAt": {"$date": "2023-02-11T13:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca1"},
+    "username": "officer_scott",
+    "email": "scott@traffic.gov",
+    "passwordHash": "$2a$10$examplehash29",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-12T09:30:00Z"},
+    "updatedAt": {"$date": "2023-02-12T09:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca2"},
+    "username": "alexander_torres",
+    "email": "alexander.t@example.com",
+    "passwordHash": "$2a$10$examplehash30",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-13T15:20:00Z"},
+    "updatedAt": {"$date": "2023-02-13T15:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca3"},
+    "username": "officer_nguyen",
+    "email": "nguyen@traffic.gov",
+    "passwordHash": "$2a$10$examplehash31",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-14T10:45:00Z"},
+    "updatedAt": {"$date": "2023-02-14T10:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca4"},
+    "username": "mia_hernandez",
+    "email": "mia.h@example.com",
+    "passwordHash": "$2a$10$examplehash32",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-15T14:30:00Z"},
+    "updatedAt": {"$date": "2023-02-15T14:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca5"},
+    "username": "officer_hill",
+    "email": "hill@traffic.gov",
+    "passwordHash": "$2a$10$examplehash33",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-16T11:15:00Z"},
+    "updatedAt": {"$date": "2023-02-16T11:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca6"},
+    "username": "ethan_flores",
+    "email": "ethan.f@example.com",
+    "passwordHash": "$2a$10$examplehash34",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-17T13:45:00Z"},
+    "updatedAt": {"$date": "2023-02-17T13:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca7"},
+    "username": "officer_green",
+    "email": "green@traffic.gov",
+    "passwordHash": "$2a$10$examplehash35",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-18T09:30:00Z"},
+    "updatedAt": {"$date": "2023-02-18T09:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca8"},
+    "username": "charlotte_nelson",
+    "email": "charlotte.n@example.com",
+    "passwordHash": "$2a$10$examplehash36",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-19T15:20:00Z"},
+    "updatedAt": {"$date": "2023-02-19T15:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610ca9"},
+    "username": "officer_adams",
+    "email": "adams@traffic.gov",
+    "passwordHash": "$2a$10$examplehash37",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-20T10:45:00Z"},
+    "updatedAt": {"$date": "2023-02-20T10:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610caa"},
+    "username": "mason_rivera",
+    "email": "mason.r@example.com",
+    "passwordHash": "$2a$10$examplehash38",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-21T14:30:00Z"},
+    "updatedAt": {"$date": "2023-02-21T14:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cab"},
+    "username": "officer_baker",
+    "email": "baker@traffic.gov",
+    "passwordHash": "$2a$10$examplehash39",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-22T11:15:00Z"},
+    "updatedAt": {"$date": "2023-02-22T11:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cac"},
+    "username": "amelia_mitchell",
+    "email": "amelia.m@example.com",
+    "passwordHash": "$2a$10$examplehash40",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-23T13:45:00Z"},
+    "updatedAt": {"$date": "2023-02-23T13:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cad"},
+    "username": "officer_carter",
+    "email": "carter@traffic.gov",
+    "passwordHash": "$2a$10$examplehash41",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-24T09:30:00Z"},
+    "updatedAt": {"$date": "2023-02-24T09:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cae"},
+    "username": "logan_roberts",
+    "email": "logan.r@example.com",
+    "passwordHash": "$2a$10$examplehash42",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-25T15:20:00Z"},
+    "updatedAt": {"$date": "2023-02-25T15:20:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610caf"},
+    "username": "officer_evans",
+    "email": "evans@traffic.gov",
+    "passwordHash": "$2a$10$examplehash43",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-26T10:45:00Z"},
+    "updatedAt": {"$date": "2023-02-26T10:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cb0"},
+    "username": "harper_ortiz",
+    "email": "harper.o@example.com",
+    "passwordHash": "$2a$10$examplehash44",
+    "role": "user",
+    "createdAt": {"$date": "2023-02-27T14:30:00Z"},
+    "updatedAt": {"$date": "2023-02-27T14:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cb1"},
+    "username": "officer_rivera",
+    "email": "rivera@traffic.gov",
+    "passwordHash": "$2a$10$examplehash45",
+    "role": "cop",
+    "createdAt": {"$date": "2023-02-28T11:15:00Z"},
+    "updatedAt": {"$date": "2023-02-28T11:15:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cb2"},
+    "username": "lucas_jenkins",
+    "email": "lucas.j@example.com",
+    "passwordHash": "$2a$10$examplehash46",
+    "role": "user",
+    "createdAt": {"$date": "2023-03-01T13:45:00Z"},
+    "updatedAt": {"$date": "2023-03-01T13:45:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cb3"},
+    "username": "officer_wood",
+    "email": "wood@traffic.gov",
+    "passwordHash": "$2a$10$examplehash47",
+    "role": "cop",
+    "createdAt": {"$date": "2023-03-02T09:30:00Z"},
+    "updatedAt": {"$date": "2023-03-02T09:30:00Z"}
+  },
+  {
+    "_id": {"$oid": "60d21b4667d0d8992e610cb4"},
+    "username": "luna_watson",
+    "email": "luna.w@example.com",
+    "passwordHash": "$2a$10$examplehash48",
+    "role": "user",
+    "createdAt": {"$date": "2023-03-03T15:20:00Z"},
+    "updatedAt": {"$date": "2023-03-03T15:20:00Z"}
+  }
+]

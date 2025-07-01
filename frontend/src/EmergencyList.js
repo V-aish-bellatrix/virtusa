@@ -91,18 +91,18 @@ const EmergencyList = () => {
           ) : error ? (
             <p className="text-center text-base text-red-500">{error}</p>
           ) : (
-            <table className="w-full min-w-[700px] border-collapse bg-white/70 rounded-2xl overflow-hidden shadow-lg">
-              <thead>
-                <tr>
-                  <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">S.No</th>
-                  <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Date</th>
-                  <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Time</th>
-                  <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Exact Location</th>
-                  <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Type of Incident</th>
-                  <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Status</th>
-                </tr>
-              </thead>
-              <tbody>
+          <table className="w-full min-w-[700px] border-collapse bg-white/70 rounded-2xl overflow-hidden shadow-lg">
+            <thead>
+              <tr>
+                <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">S.No</th>
+                <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Date</th>
+                <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Time</th>
+                <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Exact Location</th>
+                <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Type of Incident</th>
+                <th className="bg-[#00d4ff]/20 text-[#0a2540] font-bold text-base py-4 px-6 tracking-wide">Status</th>
+              </tr>
+            </thead>
+            <tbody>
                 {emergencies.map((e, idx) => {
                   const dateObj = e.createdAt ? new Date(e.createdAt) : new Date();
                   const date = dateObj.toISOString().split('T')[0];
@@ -112,24 +112,24 @@ const EmergencyList = () => {
                       <td className="py-4 px-6 text-center text-base">{idx + 1}</td>
                       <td className="py-4 px-6 text-center text-base">{date}</td>
                       <td className="py-4 px-6 text-center text-base">{time}</td>
-                      <td className="py-4 px-6 text-center text-base" style={{maxWidth: 220, whiteSpace: 'pre-line', wordBreak: 'break-word'}}>
-                        {isLatLng(e.location)
+                  <td className="py-4 px-6 text-center text-base" style={{maxWidth: 220, whiteSpace: 'pre-line', wordBreak: 'break-word'}}>
+                    {isLatLng(e.location)
                           ? (addressMap[idx] && addressMap[idx] !== e.location ? addressMap[idx] : 'Fetching address...')
                           : (e.location && !isLatLng(e.location) ? e.location : 'Fetching address...')}
-                      </td>
-                      <td className="py-4 px-6 text-center text-base">{e.type}</td>
-                      <td className="py-4 px-6 text-center text-base">
-                        <span className={
+                  </td>
+                  <td className="py-4 px-6 text-center text-base">{e.type}</td>
+                  <td className="py-4 px-6 text-center text-base">
+                    <span className={
                           e.status === 'Rescue Team Sent' ? 'text-[#0f7a0f] font-bold bg-[#1bc47d]/20 py-2 px-8 pr-12 rounded-xl whitespace-nowrap' : 'text-[#ff2a00] font-bold bg-[#ffb3b3]/30 py-2 px-8 pr-12 rounded-xl whitespace-nowrap'
-                        }>
+                    }>
                           {e.status || 'N/A'}
-                        </span>
-                      </td>
-                    </tr>
+                    </span>
+                  </td>
+                </tr>
                   );
                 })}
-              </tbody>
-            </table>
+            </tbody>
+          </table>
           )}
         </div>
       </div>

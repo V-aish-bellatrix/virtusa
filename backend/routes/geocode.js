@@ -1,37 +1,32 @@
 import express from 'express';
-import fetch from 'node-fetch'; // Make sure node-fetch is installed
+import axios from 'axios';
 
 const router = express.Router();
 
-// Proxy for reverse geocoding
-router.get('/reverse', async (req, res) => {
+// GET /api/geocode?lat=...&lon=...
+router.get('/', async (req, res) => {
+  const { lat, lon } = req.query;
+  if (!lat || !lon) {
+    return res.status(400).json({ error: 'Latitude and longitude are required' });
+  }
   try {
-    const { lat, lon } = req.query;
-    
-    if (!lat || !lon) {
-      return res.status(400).json({ error: 'Latitude and longitude are required' });
-    }
-
-    const response = await fetch(
-      `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}`,
-      {
+    const response = await axios.get(
+      `https://nominatim.openstreetmap.org/reverse`, {
+        params: {
+          format: 'jsonv2',
+          lat,
+          lon
+        },
         headers: {
-          'User-Agent': 'VirtusaTrafficApp/1.0'  // Required by Nominatim's terms of use
+          'User-Agent': 'virtusa-traffic-app/1.0'
         }
       }
     );
-
-    if (!response.ok) {
-      throw new Error(`Geocoding API returned ${response.status}`);
-    }
-
-    const data = await response.json();
-    res.json(data);
+    const address = response.data.display_name || 'Unknown location';
+    res.json({ address });
   } catch (error) {
-    console.error('Geocoding error:', error);
     res.status(500).json({ error: 'Failed to fetch address' });
   }
 });
 
 export default router; 
-
